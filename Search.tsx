@@ -16,6 +16,7 @@ interface Country {
   };
   currencies: { symbol: string; name: string }[];
   capital: string;
+  cca3: string;
   population: number;
   area: number;
   timezones: string[];
@@ -49,7 +50,9 @@ const CountrySearchScreen: React.FC = () => {
     if (searchText) {
       const filtered = countries.filter((country) =>
         country.name.common.toLowerCase().includes(searchText.toLowerCase())
+        
       );
+      
       setFilteredCountries(filtered);
     } else {
       setFilteredCountries([]);
@@ -57,6 +60,8 @@ const CountrySearchScreen: React.FC = () => {
   }, [searchText, countries]);
 
   const modeIconName = theme === lightTheme ? 'moon-o' : 'sun-o';
+  
+
 
   return (
     <View style={{ ...styles.container, backgroundColor: theme.backgroundColor }}>
@@ -83,8 +88,9 @@ const CountrySearchScreen: React.FC = () => {
       {filteredCountries.length ? (
         <FlatList
           data={filteredCountries}
-          keyExtractor={(item, index) => index.toString()}
+          keyExtractor={(item) => '${item.name.common}-${item.area}'}
           renderItem={({ item }) => (
+            
             <View style={styles.countryContainer}>
               <View style={styles.header}>
                 <Image style={styles.flag} source={{ uri: item.flags.png }} />
@@ -111,11 +117,14 @@ const CountrySearchScreen: React.FC = () => {
                   <Text style={styles.detailTitle}>Languages:</Text>
                   <Text style={styles.detailText}>{Object.values(item.languages).join(', ')}</Text>
                 </View>
-                <View style={styles.detailRow}>
+                {Object.values(item.currencies).map((currency) => (
+                <View style={styles.detailRow} key={currency.symbol}>
                   <Text style={styles.detailTitle}>Currencies:</Text>
-                  <Text style={styles.detailText}>{Object.values (item.currencies).map(currency =>  `${currency.symbol} ${currency.name}`).join(', ')}</Text>
-                   
+                  <Text style={styles.detailText}>
+                    {`${currency.symbol ?? ''} ${currency.name ?? ''}`}
+                  </Text>
                 </View>
+              ))}
               </View>
             </View>
           )}
