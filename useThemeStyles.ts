@@ -47,7 +47,7 @@ export const useThemeStyles = () => {
       borderWidth: 2,
       borderColor: '#c2c2d6',
       placeholderTextColor: '#000000',
-      backgroundColor: theme.iconText.backgroundColor, // Light gray
+      backgroundColor: theme.iconText.backgroundColor, 
     },
     countryContainer: {
       borderWidth: 1,

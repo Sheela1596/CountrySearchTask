@@ -4,7 +4,7 @@ export const lightTheme = {
     container: {
       flex: 1,
       padding: 20,
-      backgroundColor: '#EFEFF4', // Light gray
+      backgroundColor: '#EFEFF4', 
     },
     searchBar: {
       flexDirection: 'row',
@@ -31,7 +31,7 @@ export const lightTheme = {
       borderRadius: 5,
       color: '#33334d',
       placeholderTextColor: '#000000',
-      backgroundColor: '#EFEFF4', // Light gray
+      backgroundColor: '#EFEFF4', 
     },
     iconText:{
       padding: 10,
@@ -41,12 +41,12 @@ export const lightTheme = {
       borderWidth: 1,
       borderColor: '#D1D1D6',
       placeholderTextColor: '#000000',
-      backgroundColor: '#EFEFF4', // Light gray
+      backgroundColor: '#EFEFF4', 
     },
     countryContainer: {
       borderWidth: 1,
-      borderColor: '#D1D1D6', // Slightly darker gray
-      backgroundColor: '#FFFFFF', // White
+      borderColor: '#D1D1D6', 
+      backgroundColor: '#FFFFFF', 
       borderRadius: 10,
       padding: 10,
       marginBottom: 10,
@@ -81,30 +81,30 @@ export const lightTheme = {
       flexDirection: 'row',
       fontSize: 14,
       fontWeight: 'bold',
-      color: '#FF8000', // Slightly brighter orange
+      color: '#FF8000', 
     },
     detailText: {
       flex: 2,
       fontSize: 14,
-      color: '#6B4870', // Slightly darker purple
+      color: '#6B4870', 
     },
   };
   
   export const darkTheme = {
-    backgroundColor: '#14141f', // Dark gray
+    backgroundColor: '#14141f', 
     
     container: {
       flex: 1,
       padding: 20,
-      backgroundColor: '#292929', // Darker gray
+      backgroundColor: '#292929', 
     },
     searchBar: {
       flexDirection: 'row',
       alignItems: 'center',
       borderRadius: 8,
-      backgroundColor: '#292929', // Darker gray
+      backgroundColor: '#292929', 
       borderWidth: 1,
-      borderColor: '#9494b8', // Slightly darker gray
+      borderColor: '#9494b8', 
       paddingHorizontal: 10,
       marginTop: 10,
       flex: 1,
@@ -120,7 +120,7 @@ export const lightTheme = {
       borderRadius: 5,
       color: '#d1d1e0',
       placeholderTextColor: '#f0f0f5',
-      backgroundColor: '#5c5c8a', // Darker gray
+      backgroundColor: '#5c5c8a', 
     },
     
     iconText:{
@@ -131,7 +131,7 @@ export const lightTheme = {
       borderWidth: 1,
       borderColor: '#D1D1D6',
       placeholderTextColor: '#000000',
-      backgroundColor: '#5c5c8a', // Light gray
+      backgroundColor: '#5c5c8a', 
     },
     
     themeIcon: {
@@ -140,8 +140,8 @@ export const lightTheme = {
     },
     countryContainer: {
       borderWidth: 1,
-      borderColor: '#444', // Slightly darker gray
-      backgroundColor: '#29293d', // Slightly lighter dark gray
+      borderColor: '#444', 
+      backgroundColor: '#29293d', 
       borderRadius: 10,
       padding: 10,
       marginBottom: 10,
@@ -164,7 +164,7 @@ export const lightTheme = {
     countryName: {
       fontSize: 18,
       fontWeight: 'bold',
-      color: '#99bbff', // Slightly brighter blue
+      color: '#99bbff', 
     },
     detailsContainer: {},
     detailRow: {
@@ -176,12 +176,12 @@ export const lightTheme = {
       flexDirection: 'row',
       fontSize: 14,
       fontWeight: 'bold',
-      color: '#ff8080', // Slightly brighter orange
+      color: '#ff8080', 
     },
     detailText: {
       flex: 2,
       fontSize: 14,
-      color: '#ecb3ff', // Slightly darker purple
+      color: '#ecb3ff', 
     },
   };
   
